@@ -132,34 +132,32 @@ a {
     color: var(--paragraphs-color);
 }
 
-/* .mail, 
+.mail, 
 .tel {
     display: inline-flex;
-} */
+    align-items: center;
+}
 
 .mail::before {
     content: "";
-    display: inline-flex;
     margin-right: 10px;
     width: 16px;
     height: 12px;
-    /* background-position: center; */
+
     background-size: contain;
 
-    /* align-items: center; */
     background-image: url(../images/envelope.svg);
 }
 
 .tel::before {
     content: "";
-    display: inline-flex;
+    margin-right: 10px;
     width: 10px;
     height: 16px;
-    margin-right: 10px;
-    /* background-position: center; */
+    
+    background-position: center;
     background-size: contain;
-        
-    /* align-items: center; */
+
     background-image: url(../images/smartphone.svg);
 }
 
@@ -349,10 +347,6 @@ a {
     background-position: center;
     background-size: contain;
 }
-
-
-    /* align-items: center; */
-    background-image: url(../images/smartphone.svg);
 
 /* Conteiner About */
 .about{
