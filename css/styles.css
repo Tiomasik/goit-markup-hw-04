@@ -44,13 +44,23 @@ a {
 }
 
 /* Фон herro та footer*/
-.herro,
+/* .herro, */
 .footer {
+    margin-left: auto;
+    margin-right: auto;
+    /* height: 252px; */
+    max-width: 1600px;
+
     background-color: var(--backgroundhf-color);
 }
 
 /* Фон Workers */
 .workers {
+    margin-left: auto;
+    margin-right: auto;
+        /* height: 252px; */
+    max-width: 1600px;
+
     background-color: var(--backgroundphoto-color);
 }
 
@@ -122,6 +132,37 @@ a {
     color: var(--paragraphs-color);
 }
 
+/* .mail, 
+.tel {
+    display: inline-flex;
+} */
+
+.mail::before {
+    content: "";
+    display: inline-flex;
+    margin-right: 10px;
+    width: 16px;
+    height: 12px;
+    /* background-position: center; */
+    background-size: contain;
+
+    /* align-items: center; */
+    background-image: url(../images/envelope.svg);
+}
+
+.tel::before {
+    content: "";
+    display: inline-flex;
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    /* background-position: center; */
+    background-size: contain;
+        
+    /* align-items: center; */
+    background-image: url(../images/smartphone.svg);
+}
+
 .footer .contact-item:not(:last-child) {
     margin-bottom: 9px;
 }
@@ -148,7 +189,24 @@ a {
 .herro {
     padding-top: 200px;
     padding-bottom: 200px;
-    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+
+    height: 600px;
+    max-width: 1600px;
+
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-color: var(--backgroundhf-color);
+    background-image: linear-gradient(to right,
+                    rgba(47, 48, 58, 0.4), 
+                    rgba(47, 48, 58, 0.4)
+                    ), 
+                    url(../images/herro.jpg);
+
+    /* outline: 1px solid tomato; */
+    text-align: center;  
 }
 
 .herro-title {
@@ -278,6 +336,23 @@ a {
 .aside-item:not(:last-child) {
     margin-right: 30px;
 }
+
+.attention::before {
+    content: "";
+    display: block;
+    margin-bottom: 30px;
+    height: 120px;
+    background-size: contain;
+    background-color: #F5F4FA;
+    background-image: url(../images/antenna.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+
+    /* align-items: center; */
+    background-image: url(../images/smartphone.svg);
 
 /* Conteiner About */
 .about{
