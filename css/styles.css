@@ -335,17 +335,33 @@ a {
     margin-right: 30px;
 }
 
-.attention::before {
+/* Aside icons */
+.aside-item::before {
     content: "";
     display: block;
     margin-bottom: 30px;
     height: 120px;
     background-size: contain;
     background-color: #F5F4FA;
-    background-image: url(../images/antenna.svg);
     background-repeat: no-repeat;
     background-position: center;
-    background-size: contain;
+    background-size: 70px;
+}
+
+.attention::before {
+    background-image: url(../images/antenna.svg);
+}
+
+.punctuality::before {
+    background-image: url(../images/clock.svg);
+}
+
+.plan::before {
+    background-image: url(../images/diagram.svg);
+}
+
+.modern::before {
+    background-image: url(../images/astronaut.svg);
 }
 
 /* Conteiner About */
