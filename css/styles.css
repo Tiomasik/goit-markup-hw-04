@@ -336,7 +336,7 @@ a {
 }
 
 /* Aside icons */
-.aside-item::before {
+/* .aside-item::before {
     content: "";
     display: block;
     margin-bottom: 30px;
@@ -362,7 +362,7 @@ a {
 
 .modern::before {
     background-image: url(../images/astronaut.svg);
-}
+} */
 
 /* Conteiner About */
 .about{
