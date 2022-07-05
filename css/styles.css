@@ -336,6 +336,18 @@ a {
 }
 
 /* Aside icons */
+.icon {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    padding: 25px 100px;
+    margin-bottom: 30px;
+} 
+
+.icon-item {
+    width: 70px;
+    height: 70px;
+}
 /* .aside-item::before {
     content: "";
     display: block;
@@ -363,6 +375,10 @@ a {
 .modern::before {
     background-image: url(../images/astronaut.svg);
 } */
+.page{
+    width: 70px;
+    height: 70px;
+}
 
 /* Conteiner About */
 .about{
