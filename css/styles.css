@@ -132,13 +132,28 @@ a {
     color: var(--paragraphs-color);
 }
 
+.icon-mail {
+    width: 16px;
+    height: 12px;
+    margin-right: 10px;
+    fill: currentColor;
+}
+
+.icon-tel {
+    width: 10px;
+    height: 16px;
+    margin-right: 10px;
+    fill:currentColor;
+}
+
+
 .mail, 
 .tel {
     display: inline-flex;
     align-items: center;
 }
 
-.mail::before {
+/*.mail::before {
     content: "";
     margin-right: 10px;
     width: 16px;
@@ -159,7 +174,7 @@ a {
     background-size: contain;
 
     background-image: url(../images/smartphone.svg);
-}
+} */
 
 .footer .contact-item:not(:last-child) {
     margin-bottom: 9px;
@@ -173,7 +188,7 @@ a {
 }
 
 .nav-link:hover, 
-.nav-link:focus, 
+.nav-link:focus,
 .contact-link:hover,
 .contact-link:focus {
     color: var(--backgroundbutton-color);
@@ -337,11 +352,14 @@ a {
 
 /* Aside icons */
 .icon {
+    display: flex;
     width: 270px;
     height: 120px;
     background-color: #F5F4FA;
-    padding: 25px 100px;
+    align-items: center;
+    /* padding: 25px 100px; */
     margin-bottom: 30px;
+    justify-content: center;
 } 
 
 .icon-item {
@@ -427,6 +445,40 @@ a {
 .workers-div {
     padding-top: 30px;
     padding-bottom: 30px;
+}
+
+/* Conteiner Customers */
+.customers-title {
+    margin-top: 0;
+    margin-bottom: 0;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+
+.customers-link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 170px;
+    height: 92px;
+    
+    color: #AFB1B8;;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px;
+}
+.customers-link:hover {
+    border-color: var(--backgroundbutton-color);
+    color: var(--backgroundbutton-color);;
+}
+
+.customers-company {
+    width: 106px;
+    height: 60px;
+
+    fill: currentColor;
 }
 
 /* Conteiner Project */
