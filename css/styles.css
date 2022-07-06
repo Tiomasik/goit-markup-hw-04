@@ -86,6 +86,10 @@ a {
 .header {
     padding-top: 25px;
     padding-bottom: 25px;
+    margin-right: auto;
+    margin-left: auto;
+    width: 1600px;
+
     border-bottom: 1px solid #ECECEC;
 }
 
@@ -444,13 +448,48 @@ a {
 
 .workers-div {
     padding-top: 30px;
-    padding-bottom: 30px;
 }
 
+.workers-list-icon {
+    display: flex;
+    padding-top: 16px;
+    padding-bottom: 30px;
+    padding-left: 32px;
+    padding-right: 32px;
+    justify-content: space-between;
+}
+
+.workers-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 44px;
+    height: 44px;
+    color: #AFB1B8;
+    border-radius: 50%;
+}
+
+.workers-link-icon:hover,
+.workers-link-icon:focus {
+    color: #FFFFFF;
+    background-color: var(--backgroundbutton-color);
+}
+
+.networks {
+    width: 20px;
+    height: 20px;
+    fill: currentColor;
+}
+
+
 /* Conteiner Customers */
+.customers {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
 .customers-title {
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 50px;
 
     font-weight: 700;
     font-size: 36px;
@@ -458,10 +497,17 @@ a {
     text-align: center;
 }
 
+.customers-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
 .customers-link {
     display: flex;
     align-items: center;
     justify-content: center;
+
     width: 170px;
     height: 92px;
     
@@ -473,6 +519,11 @@ a {
     border-color: var(--backgroundbutton-color);
     color: var(--backgroundbutton-color);;
 }
+
+/* .customers-item:not(:last-child) {
+    margin-right: 20px;
+} */
+
 
 .customers-company {
     width: 106px;
@@ -504,6 +555,41 @@ a {
 .footer {
     padding-top: 60px;
     padding-bottom: 60px;
+}
+
+.footer .conteiner {
+    display: flex;
+}
+
+.footer-icon {
+    margin-left: 70px;
+    padding-top: 12px;
+}
+
+.footer-list-icon {
+    display: flex;
+}
+
+.footer-link-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 44px;
+    height: 44px;
+    
+    color: #FFFFFF;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-list-icon:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-link-icon:hover,
+.footer-link-icon:focus {
+    background-color: var(--backgroundbutton-color);
 }
 
 /* Titles */
@@ -552,6 +638,18 @@ a {
     line-height: 2;
     font-weight: 700;
     letter-spacing: 0.06em;
+}
+
+.icon-subtitle {
+margin-top: 0;
+margin-bottom: 20px;
+
+color: var(--title-color);
+
+font-weight: 700;
+font-size: 14px;
+line-height: 1.14;
+text-transform: uppercase;
 }
 
 /* Desc(Text) */
