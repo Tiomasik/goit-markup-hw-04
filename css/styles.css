@@ -104,7 +104,6 @@ a {
     padding-bottom: 25px;
     margin-right: auto;
     margin-left: auto;
-    width: 1600px;
 
     border-bottom: 1px solid #ECECEC;
 }
@@ -469,15 +468,18 @@ a {
 
 .workers-div {
     padding-top: 30px;
+    padding-bottom: 30px;
 }
 
 .workers-list-icon {
     display: flex;
-    padding-top: 16px;
-    padding-bottom: 30px;
     padding-left: 32px;
     padding-right: 32px;
-    justify-content: space-between;
+    justify-content: center;
+}
+
+.workers-item-icon:not(:last-child) {
+    margin-right: 10px;
 }
 
 .workers-link-icon {
@@ -536,7 +538,8 @@ a {
     border: 1px solid #AFB1B8;
     border-radius: 4px;
 }
-.customers-link:hover {
+.customers-link:hover,
+.customers-link:focus {
     border-color: var(--backgroundbutton-color);
     color: var(--backgroundbutton-color);;
 }
@@ -571,8 +574,8 @@ a {
     width: calc((100% - 60px) / 3);
 }
 
-.project-item:hover,
-.project-item:focus {
+.project-link:hover,
+.project-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 
                 0px 4px 4px rgba(0, 0, 0, 0.06), 
                 1px 4px 6px rgba(0, 0, 0, 0.16);
@@ -590,11 +593,11 @@ a {
 
 .footer .conteiner {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-icon {
     margin-left: 70px;
-    padding-top: 12px;
 }
 
 .footer-list-icon {
@@ -614,7 +617,7 @@ a {
     background-color: rgba(255, 255, 255, 0.1);
 }
 
-.footer-list-icon:not(:last-child) {
+.footer-item-icon:not(:last-child) {
     margin-right: 10px;
 }
 
@@ -698,7 +701,7 @@ text-transform: uppercase;
 
 .workers-desc {
     margin-top: 10px;
-    margin-bottom: 0;
+    margin-bottom: 16px;
 
     color: var(--paragraphs-color);
    
